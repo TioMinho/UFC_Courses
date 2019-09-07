@@ -1,0 +1,27 @@
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,229.28334045410156); %set diagram left start at 0, and has height of 229.28334045410156
+
+%Straight Lines [id:da210821574381732] 
+\draw [line width=1.5]    (36.62,90.33) -- (140,90.33) ;
+\draw [shift={(143,90.33)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=1.5]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+
+%Straight Lines [id:da820799252153864] 
+\draw [line width=1.5]    (193,90.33) -- (296.38,90.33) ;
+\draw [shift={(299.38,90.33)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=1.5]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+
+%Shape: Square [id:dp7779976189799176] 
+\draw  [line width=1.5]  (143,64) -- (193,64) -- (193,114) -- (143,114) -- cycle ;
+
+% Text Node
+\draw (56,105) node   {$x[ n]$};
+% Text Node
+\draw (267,106) node   {$x[ n-1]$};
+% Text Node
+\draw (168,89) node   {$z^{-1}$};
+
+
+\end{tikzpicture}

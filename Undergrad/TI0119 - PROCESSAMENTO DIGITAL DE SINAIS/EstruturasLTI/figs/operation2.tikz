@@ -1,0 +1,23 @@
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,229.28334045410156); %set diagram left start at 0, and has height of 229.28334045410156
+
+%Straight Lines [id:da210821574381732] 
+\draw [line width=1.5]    (21.62,98.33) -- (125,98.33) ;
+\draw [shift={(128,98.33)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=1.5]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+
+%Straight Lines [id:da820799252153864] 
+\draw [line width=1.5]    (126,98.33) -- (229.38,98.33) ;
+\draw [shift={(232.38,98.33)}, rotate = 180] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=1.5]  [draw opacity=0] (13.4,-6.43) -- (0,0) -- (13.4,6.44) -- (8.9,0) -- cycle    ;
+
+
+% Text Node
+\draw (41,111) node   {$x[n]$};
+% Text Node
+\draw (195,115) node   {$ax[n]$};
+% Text Node
+\draw (120,80) node   {$a$};
+
+
+\end{tikzpicture}

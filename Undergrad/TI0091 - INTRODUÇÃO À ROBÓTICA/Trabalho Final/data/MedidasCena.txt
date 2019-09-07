@@ -1,0 +1,8 @@
+Medidas das cenas (cm):
+
+Caixas:
+Caixa Impressora: 47,5 x 53,0 x 25,0
+Caixa Menor: 16,0 x 21,5 x 9,5
+
+Bola:
+Diâmetro: 20,0

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Zapgram_ChatClient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/Zapgram_Client/Zapgram_ChatClient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,42 @@
+###
+#
+#	1º Trabalho Prático de Introdução à Robótica (TI0091)
+#
+#	ASSUNTO: Simulações de Cinemática Direta
+#	EQUIPE:
+#			Bruna Souza Ferreira - 399808
+#			Lucas Ferreira Santos - 378607
+#			Lucas Rodrigues Keiler - 374943
+#			Otacílio Bezerra Leite Neto - 385213
+#
+###
+#
+## Descrição:
+
+No referido trabalho, implementamos, em Python 3, três aplicações referentes à três simulações exigidas
+no trabalho. Os arquivos e as simulações correspondentes são:
+
+	1. robot3R.py 			-> Simulação de um Robô Planar 3R
+	2. scarpaRobot.py 		-> Simulação de um Robô SCARPA
+	3. scapaGeneralized.py 	-> Simulação de um Robô SCARPA com N Pontos de Controle
+
+As aplicações podem ser facilmente executadas em um computador Linux ao executar o seguinte comando no 
+Terminal, caso ele esteja aberto no diretório onde se encontram os arquivos:
+
+	python3 nomeDoArquivo.py
+
+Obs.: Para que os scripts executem, todavia, é necessário que as bibliotecas Numpy e Matplotlib estejam instaladas no computador
+
+As três aplicações seguem um padrão de implementação, onde as Tabelas de Denavit-Hartenberg são primeiramente instanciadas para que, com elas, sejam obtidas as Matrizes de Transformação entre os frames de referência. Assim que as matrizes são obtidas, um conjunto de transformações, partindo do frame universal (na base dos Robôs) é aplicado até que cada frame esteja posicionado e orientado de acordo com a configuração especificada pelos parâmetros Theta. O comprimento e espessura dos elos de cada robô já é fixado no próprio código. Para todas as aplicações é utilizado uma representação gráfica tri-dimensional dos robôs, utilizando retângulos posicionados através dos frames em cada junta.
+
+Para visualizar o resultado das simulações (caso não seja possível executar o script), já estão disponíveis
+animações de movimento para seis (6) diferentes simulações. As animações estão na pasta "simulation", que acompanha os arquivos do trabalho. Cada simulação acompanha três animações mostrando a cinemática de um ponto de vista lateral, superior e diagonal. As simulações são:
+
+	sim1 -> Cinemática do Robô 3R para valores de Thetas iguais a (45º, 45º, 45º)
+	sim2 -> Cinemática do Robô 3R para valores de Thetas iguais a (-120º, 90º, -45º)
+	sim3 -> Cinemática do Robô SCARPA para valores de Thetas iguais a (90º, 90º)
+	sim4 -> Cinemática do Robô SCARPA para valores de Thetas iguais a (90º, 90º) com 7 Pontos de Controle
+	sim5 -> Cinemática do Robô SCARPA para valores de Thetas iguais a (120º, -90º) com 7 Pontos de Controle
+	sim6 -> Cinemática do Robô SCARPA para valores de Thetas iguais a (-270º, 120º) com 15 Pontos de Controle
+
+As duas primeiras simulações são referentes ao script "robot3R.py", enquanto que as subsequentes são referentes aos scripts "scarpaRobot.py" e "scarpaGeneralized.py".
