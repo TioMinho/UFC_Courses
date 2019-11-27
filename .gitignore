@@ -40,6 +40,7 @@ octave-workspace
 ####################################### LATEX
 # Latex Temporary Files #
 #########################
+report/
 *.log
 *.aux
 *.bbl
