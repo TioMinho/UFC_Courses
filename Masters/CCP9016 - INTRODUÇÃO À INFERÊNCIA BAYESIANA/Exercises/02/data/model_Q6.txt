@@ -1,0 +1,14 @@
+# Model:
+#	x_1, ..., x_n | theta ~ Bernoulli(theta)  (i.i.d)
+#		  			theta ~ Beta(a, b)
+# Data: x = (1,0,1,1,1,0,...,1,0,1), n=100 <~> sum(x) = 15
+
+model {
+	# Likelihood
+	for (i in 1:n) {
+		x[i] ~ dbern(theta)
+	}	
+
+	# Prior
+	theta ~ dbeta(a, b)
+}

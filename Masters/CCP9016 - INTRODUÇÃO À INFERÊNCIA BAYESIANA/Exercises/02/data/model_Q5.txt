@@ -1,0 +1,26 @@
+# Model:
+#	x_1 | theta ~ Binomial(20, theta)  (i.i.d)
+#		  theta ~ Uniform(0, 1)
+# Data: x = (8), n=1
+#
+# Testar as hipoteses:
+#	H_0 ) theta == 0.1 <~> H_0) theta \in (0.1-eps, 0.1+eps);  eps << 0 (tipicamente eps=0.01)
+#	H_1 ) theta == 0.3 <~> H_0) theta \in (0.3-eps, 0.3+eps);  eps << 0 (tipicamente eps=0.01)
+#	H_2 ) theta == 0.5 <~> H_0) theta \in (0.5-eps, 0.5+eps);  eps << 0 (tipicamente eps=0.01)
+
+model {
+	# Likelihood
+	x ~ dbin(theta, 20)
+
+	# Priors
+	theta ~ dunif(0, 1)
+
+	# Hipóteses
+	eps <- 0.01
+	p[1] <- step(theta-(0.1-eps))*step((0.1+eps)-theta) # P(theta = 0.1)
+	p[2] <- step(theta-(0.3-eps))*step((0.3+eps)-theta) # P(theta = 0.3)
+	p[3] <- step(theta-(0.5-eps))*step((0.5+eps)-theta) # P(theta = 0.5)
+
+	## Hyperparameters
+	# -
+}

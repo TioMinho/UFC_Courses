@@ -1,0 +1,17 @@
+# Model:
+#	x_1, ..., x_n | theta ~ Binomial(500,theta)  (i.i.d)
+#					theta ~ Kumaraswamy(2, 9)
+# Data: x = (1,0,1,1,0,0,...,1,0), n=500 => sum(x) = 40
+
+model {
+	# Likelihood
+	x 		~ dbin(theta, 500)
+	x_pred 	~ dbin(theta, 500)	# Posterior Predictive
+
+	# Prior
+	theta_aux ~ dbeta(1, b)
+	theta <- pow(theta_aux, 1/a)
+
+	## Hyperparameters
+	a <- 2; b <- 9;
+}
